@@ -1,16 +1,16 @@
 use std::fmt::Display;
 use ts_types_macros::ts_type;
 
-#[ts_type(export_path = "/frontend/src/")]
+#[ts_type]
 pub struct User {
     first_name: String,
     last_name: String,
     age: u32,
 }
 
-#[ts_type(export_path = "/backend/src/", file_extension = ".cs")]
+#[ts_type]
 pub struct Exercise {
-    pub length: f32,
+    pub length: Vec<f32>,
 }
 
 impl User {
