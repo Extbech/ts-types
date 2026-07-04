@@ -8,9 +8,9 @@ pub struct User {
     age: u32,
 }
 
-#[ts_type]
+#[ts_type(path = "Training.ts")]
 pub struct Exercise {
-    pub length: Vec<f32>,
+    pub length: Vec<Vec<u32>>,
 }
 
 impl User {
